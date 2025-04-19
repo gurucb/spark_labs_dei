@@ -7,7 +7,7 @@ Welcome to the Spark exercise practice repository! This repository contains a va
 - Prerequisites
 - Setup
 - Exercises
-  - Exercise 1: Basic Spark
+  - Exercise 1: Spark Cluster Setup
   - Exercise 2: Data Processing
   - Exercise 3: Streaming Data Processing
 - Additional Resources
@@ -48,9 +48,9 @@ To set up the repository, follow these steps:
 
 ## Exercises
 
-### Exercise 1: Basic Spark
-**Objective:** Practice basic Spark programming concepts.
-
+### Exercise 1: Spark Setup
+**Objective:** Learn steps to setup and configure Spark multi node cluster.
+Refer to [installation_configuration/DEI_docker_compose_multiserver.md]([https://](https://github.com/gurucb/spark_labs_dei/blob/main/installation_configuration/DEI_docker_compose_multiserver.md)) for steps to install and configure multi node Spark Cluster.
 **Instructions:**
 
 ### Exercise 2: Data Processing
