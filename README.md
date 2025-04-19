@@ -50,8 +50,7 @@ To set up the repository, follow these steps:
 
 ### Exercise 1: Spark Setup
 **Objective:** Learn steps to setup and configure Spark multi node cluster.
-Refer to [installation_configuration/DEI_docker_compose_multiserver.md]([https://](https://github.com/gurucb/spark_labs_dei/blob/main/installation_configuration/DEI_docker_compose_multiserver.md)) for steps to install and configure multi node Spark Cluster.
-**Instructions:**
+Refer to [installation_configuration/DEI_docker_compose_multiserver.md](https://github.com/gurucb/spark_labs_dei/blob/main/installation_configuration/DEI_docker_compose_multiserver.md) for steps to install and configure multi node Spark Cluster.
 
 ### Exercise 2: Data Processing
 **Objective:** Perform data processing using Spark.
