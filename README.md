@@ -17,10 +17,19 @@ This repository is designed to provide students with hands-on practice in Apache
 
 ## Prerequisites
 Before you begin, make sure you have the following installed on your computer:
-- Docker Desktop (For install Spark)
+- Machine with Linux or Windows with WSL and Docker Desktop
+- Java
 - Python 3.x
 - Git
-- A code editor (e.g., VS Code, PyCharm)
+- VS Code
+
+## Spark Cluster on Laptop with Docker 
+Before you begin, make sure you have the following installed on your computer:
+- [text](https://www.java.com/en/download/manual.jsp)
+- Python 3.x
+- Git
+- VS Code
+
 
 ## Setup
 To set up the repository, follow these steps:
