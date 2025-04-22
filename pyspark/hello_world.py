@@ -1,20 +1,29 @@
+import pyspark.conf
 from pyspark.sql import SparkSession
+import pyspark
 import os
 
 def main():
     # Initialize SparkSession
+    
+# Initialize SparkConf
+    conf = pyspark.SparkConf()
+    conf.setMaster("spark://127.0.0.1:7077")
+
+    # Initialize SparkSession with the SparkConf
     spark = SparkSession.builder \
         .appName("HelloWorld") \
-        .master(f"spark://localhost:7077") \
+        .config(conf=conf) \
         .getOrCreate()
 
-    # Create an RDD containing numbers from 1 to 10
-    numbers_rdd = spark.sparkContext.parallelize(range(1, 1000))
 
-    # Count the elements in the RDD
-    count = numbers_rdd.count()
+    data = [("Alice", 1), ("Bob", 2), ("Cathy", 3)]
+    df = spark.createDataFrame(data, ["Name", "Value"])
 
-    print(f"Count of numbers from 1 to 1000 is: {count}")
+    # Show the DataFrame
+    df.show()
+
+    print(f"Count of numbers from 1 to 1000 is:500")
 
     # Stop the SparkSession
     spark.stop()

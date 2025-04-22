@@ -25,7 +25,7 @@ Before you begin, make sure you have the following installed on your computer:
 
 ## Spark Cluster on Laptop with Docker 
 Before you begin, make sure you have the following installed on your computer:
-- [text](https://www.java.com/en/download/manual.jsp)
+- [Java](https://www.java.com/en/download/manual.jsp)
 - Python 3.x
 - Git
 - VS Code
