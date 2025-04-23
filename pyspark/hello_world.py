@@ -2,6 +2,7 @@ import pyspark.conf
 from pyspark.sql import SparkSession
 import pyspark
 import os
+import dotenv
 
 def main():
     # Initialize SparkSession
@@ -9,6 +10,8 @@ def main():
 # Initialize SparkConf
     conf = pyspark.SparkConf()
     conf.setMaster("spark://127.0.0.1:7077")
+    conf.set("deploy.mode","client")
+    conf.set("spark.driver.host","172.27.29.60")
 
     # Initialize SparkSession with the SparkConf
     spark = SparkSession.builder \

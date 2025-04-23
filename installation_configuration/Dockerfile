@@ -1,6 +1,8 @@
-FROM bitnami/spark  
+FROM bitnami/spark AS jupyter-local 
 
-# Install Python packages
-RUN pip install numpy && \
-    pip install matplotlib && \
-    pip install scipy
+#Copy Logging properties to all nodes of spark cluster
+COPY        log4j2.properties /opt/bitnami/spark/conf/log4j2.properties
+WORKDIR     /app
+COPY        --chmod=777 app    /app/
+RUN         pip install -r requirements.txt
+EXPOSE      8888
